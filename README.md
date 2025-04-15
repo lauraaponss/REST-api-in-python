@@ -66,11 +66,13 @@ This will execute a series of tests against the running server and display the r
 The API expects a CSV file with the following structure:
 
 ```
-id,title,author,year,genre
-1,To Kill a Mockingbird,Harper Lee,1960,Fiction
-2,1984,George Orwell,1949,Dystopian
+id,title,author,year
+1,To Kill a Mockingbird,Harper Lee,1960
+2,1984,George Orwell,1949
 ...
 ```
+
+The CSV contains 10 books with 4 columns for each book.
 
 ## 📋 Example Response
 
@@ -82,15 +84,13 @@ Getting all books (`GET /api/books`):
     "id": "1",
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
-    "year": "1960",
-    "genre": "Fiction"
+    "year": "1960"
   },
   {
     "id": "2",
     "title": "1984",
     "author": "George Orwell",
-    "year": "1949",
-    "genre": "Dystopian"
+    "year": "1949"
   },
   ...
 ]
@@ -111,4 +111,3 @@ Getting all books (`GET /api/books`):
 ## 📚 Course Information
 
 Developed for the Design of Telematic Systems course at Universidad Carlos III de Madrid (UC3M).
-
